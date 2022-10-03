@@ -24,6 +24,10 @@ object Deps {
     val ktorSerializable by lazy { "io.ktor:ktor-client-serialization:${Versions.ktor}" }
     val ktorLogging by lazy { "io.ktor:ktor-client-logging-jvm:${Versions.ktor}" }
     val ktorGson by lazy { "io.ktor:ktor-client-gson:${Versions.ktor}" }
+    val ktorCbor by lazy { "io.ktor:ktor-serialization-kotlinx-cbor:${Versions.ktor}" }
+    val ktorNegotiation by lazy { "io.ktor:ktor-client-content-negotiation:${Versions.ktor}" }
+    val ktorSerializedGson by lazy { "io.ktor:ktor-serialization-gson:${Versions.ktor}" }
+
 
     val kotlinJson by lazy { "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.kotlinJson}" }
 
