@@ -42,7 +42,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = Versions.compose
+        kotlinCompilerExtensionVersion = Versions.composeCompiler
     }
     packagingOptions {
         resources {
@@ -66,9 +66,15 @@ dependencies {
     implementation(Deps.ktorClient)
     implementation(Deps.ktorSerializable)
     implementation(Deps.ktorLogging)
+    implementation(Deps.ktorOkhttp)
+    implementation(Deps.ktorCbor)
+    implementation(Deps.ktorNegotiation)
+    implementation(Deps.ktorSerializedGson)
     implementation(Deps.ktorGson)
     implementation(Deps.gson)
     implementation(Deps.coil)
+    implementation(Deps.napier)
+    debugCompileOnly(Deps.chuck)
 
     testImplementation(Deps.junit)
     androidTestImplementation(Deps.junitExt)
