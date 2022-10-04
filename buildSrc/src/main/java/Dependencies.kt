@@ -23,6 +23,8 @@ object Deps {
     val ktorClient by lazy { "io.ktor:ktor-client-android:${Versions.ktor}" }
     val ktorSerializable by lazy { "io.ktor:ktor-client-serialization:${Versions.ktor}" }
     val ktorLogging by lazy { "io.ktor:ktor-client-logging-jvm:${Versions.ktor}" }
+    val ktorOkhttp by lazy { "io.ktor:ktor-client-okhttp:${Versions.ktor}" }
+    val chuck by lazy { "com.readystatesoftware.chuck:library:${Versions.chuck}" }
     val ktorGson by lazy { "io.ktor:ktor-client-gson:${Versions.ktor}" }
     val ktorCbor by lazy { "io.ktor:ktor-serialization-kotlinx-cbor:${Versions.ktor}" }
     val ktorNegotiation by lazy { "io.ktor:ktor-client-content-negotiation:${Versions.ktor}" }
@@ -34,6 +36,8 @@ object Deps {
     val gson by lazy { "com.google.code.gson:gson:${Versions.gson}" }
 
     val coil by lazy { "io.coil-kt:coil-compose:${Versions.coil}" }
+
+    val napier by lazy { "io.github.aakira:napier:${Versions.napier}" }
 
 
     /**
